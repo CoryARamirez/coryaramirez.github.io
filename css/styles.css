@@ -1,0 +1,179 @@
+/*---------------------------------
+MAIN STYLES
+----------------------------------*/
+
+body {
+	font-family: 'Raleway', sans-serif;	
+}
+
+/*Removes padding for about me section*/
+
+.container-fluid-custom {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*---------------------------------
+HEADER
+----------------------------------*/
+
+.navbar-inner {
+    background: transparent;
+    border: none;
+}
+
+.nav.navbar-nav li a {
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: blue;
+  background-color: white;
+  border-radius: 25px;
+  display: block;
+  height: 0.25em;
+  padding-bottom: 25px;  
+}
+
+.navbar {
+	margin-top: -5px;
+	font-weight: 600;
+}
+
+
+/*---------------------------------
+HERO IMAGE
+----------------------------------*/
+
+.hero-img {
+	background-image:url('/img/header.jpg');
+	background-size: 100% 100%;	
+	height: 100vh;
+}
+
+.hero-img .hero-text {
+	font-family: 'Rubik Mono One', sans-serif;
+	color: white;
+	margin-top: 6.5em;
+	font-size: 64px;
+	text-align: center;	
+}
+
+
+/*---------------------------------
+CONTENT SECTION
+----------------------------------*/
+
+.about-me {
+	background-color: #192231;
+	min-height: 310px;
+}
+
+.about-me .hello-text {
+	color: #F8F8FF;
+	text-align: center;
+	margin-top: 3.5em;
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 150%;
+}
+
+p.hello-text em.what-if {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-style: normal;
+	font-size: 24px;
+}
+
+.services-wrapper {
+	background-color: #133453;
+	min-height: 370px;
+}
+
+.service-box {
+	height: 300px;
+	width: 200px;
+	background-color: #133453;
+	margin: 0 auto;
+}
+
+.services-icon {
+	height: 115px;
+	width: 150px;
+	border: 1px solid #133453;
+	background: #133453;
+	margin-top: -3.5em;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+	margin-right: 10em;
+	margin-left: 1em;
+}
+
+.services-title {
+	margin-top: 0.5em;
+	color: #F8F8FF;
+	text-align: center;
+	font-size: 24px;
+}
+
+.services-desc {
+	color: #F8F8FF;
+	text-align: center;
+}
+
+hr {
+	width: 40px;
+}
+
+.intro-wrapper {
+	background-color: white;
+	min-height: 395px;
+}
+
+.intro-box {
+	background-color: white;
+	width: 100%;
+}
+
+.intro-img {
+	max-width:100%;
+	max-height:100%;
+}
+
+.intro-title {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 48px;
+	margin-top: 1.5em;
+	margin-left: 1.5em;
+	text-align: left;
+}
+
+.intro-text {
+	margin-left: 4.5em;
+	font-size: 16px;
+	line-height: 23px;
+	text-align: left;
+	margin-right: 3em;
+}
+
+.languages-wrapper {
+	min-height: 310px;
+	background-color: #133453;
+}
+
+.skill-img {
+
+{}
+
+
+
+/*---------------------------------
+FOOTER
+----------------------------------*/
+
+/*---------------------------------
+MEDIA QUERIES
+----------------------------------*/
+
