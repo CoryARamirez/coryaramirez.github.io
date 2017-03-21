@@ -4,13 +4,27 @@ MAIN STYLES
 
 body {
 	font-family: 'Raleway', sans-serif;	
+	overflow-x: hidden;
 }
 
 /*Removes padding for about me section*/
 
 .container-fluid-custom {
-	margin-right: auto;
 	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.col-lg-6
+
+{
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
 }
 
 
@@ -19,47 +33,60 @@ HEADER
 ----------------------------------*/
 
 .navbar-inner {
-    background: transparent;
+    background-color: rgba(0,0,0,0.3);
     border: none;
 }
 
 .nav.navbar-nav li a {
 	color: white;
+	margin-right: .75em;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: blue;
+  color: default;
   background-color: white;
-  border-radius: 25px;
-  display: block;
-  height: 0.25em;
+  border-radius: 2px;
+  height: 3.5em;
   padding-bottom: 25px;  
 }
 
+.nav navbar-nav navbar-right {
+	color: default;
+}
+
 .navbar {
-	margin-top: -5px;
+	
 	font-weight: 600;
 }
 
+.navbar-toggle collapsed {
+	border: none;
+}
+
+.fa-linkedin, .fa-twitter, .fa-codepen, .fa-github {
+	font-size: 19px;
+}
 
 /*---------------------------------
 HERO IMAGE
 ----------------------------------*/
 
 .hero-img {
-	background-image:url('/img/header.jpg');
+	background-image:url('../img/header.jpg');
 	background-size: 100% 100%;	
 	height: 100vh;
 }
 
-.hero-img .hero-text {
-	font-family: 'Rubik Mono One', sans-serif;
+.hero-text {
+	font-size: 60px;
 	color: white;
+	font-weight: 300;
 	margin-top: 6.5em;
-	font-size: 64px;
-	text-align: center;	
 }
 
+.text-line {
+	font-size: 26px;
+}
 
 /*---------------------------------
 CONTENT SECTION
@@ -73,7 +100,7 @@ CONTENT SECTION
 .about-me .hello-text {
 	color: #F8F8FF;
 	text-align: center;
-	margin-top: 3.5em;
+	/*margin-top: 3.5em;*/
 	font-size: 28px;
 	font-weight: 300;
 	line-height: 150%;
@@ -113,28 +140,40 @@ p.hello-text em.what-if {
 
 .services-title {
 	margin-top: 0.5em;
+	margin-right: 0.8em;
 	color: #F8F8FF;
 	text-align: center;
 	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 2px;
 }
 
 .services-desc {
 	color: #F8F8FF;
 	text-align: center;
+	font-weight: 300;
+	font-size: 16px;
+	padding-top: 15px;
+	margin-right: 0.8em;
 }
 
 hr {
 	width: 40px;
+	margin-right: 6em;
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin-bottom: 2em;
 }
 
 .intro-wrapper {
 	background-color: white;
-	min-height: 395px;
+	/*min-height: 300px;*/
 }
 
 .intro-box {
 	background-color: white;
-	width: 100%;
 }
 
 .intro-img {
@@ -145,7 +184,7 @@ hr {
 .intro-title {
 	font-family: 'Rubik Mono One', sans-serif;
 	font-size: 48px;
-	margin-top: 1.5em;
+	/*margin-top: 1.5em;*/
 	margin-left: 1.5em;
 	text-align: left;
 }
@@ -156,24 +195,325 @@ hr {
 	line-height: 23px;
 	text-align: left;
 	margin-right: 3em;
+	/*margin-bottom: 4em;*/
 }
 
 .languages-wrapper {
-	min-height: 310px;
+	min-height: 435px;
+	background-color: #192231;
+	padding-top: 4.5em;
+}
+
+.skills-intro {
+	font-style: normal;
+	font-size: 28px;
+	color: #F8F8FF;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.icon-wrap {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.devicon-html5-plain-wordmark,	       		   
+.devicon-css3-plain-wordmark,	     
+.devicon-javascript-plain,
+.devicon-jquery-plain-wordmark,
+.devicon-react-original-wordmark,
+.devicon-python-plain-wordmark {
+	font-size: 146px;
+	color: white;
+}
+
+.devicon-html5-plain-wordmark {
+	color: #e34f26;
+}
+
+.devicon-css3-plain-wordmark {
+	color: #39AAD2;
+}
+
+.devicon-javascript-plain {
+	color: #F7DF1D;
+}
+
+.devicon-jquery-plain-wordmark {
+	color: #0D6AB1;
+}
+
+.devicon-react-plain-wordmark {
+	color: #5DBCD2;
+}
+
+.devicon-python-plain-wordmark {
+	color: #FFDE48;
+}	       
+
+.work-wrapper {
+	padding-top: 65px;
+	padding-bottom: 75px;
+	min-height: 500px;
 	background-color: #133453;
 }
 
-.skill-img {
+.projects-intro {
+	font-style: normal;
+	font-size: 28px;
+	color: #F8F8FF;
+	text-align: center;
+	margin-bottom: 2em;
+}
 
-{}
-
+.work-box {
+	height: 250px;
+	width: 320px;	
+	margin: 0 auto;
+}
 
 
 /*---------------------------------
 FOOTER
 ----------------------------------*/
 
+.contact-wrapper {
+	min-height: 800px;
+	background-image:url('../img/footer.jpg');
+	background-size: 100% 100%;	
+}
+
+.contact-me-text {
+	margin-top: 3em;
+	font-style: normal;
+	font-size: 36px;
+	color: #F8F8FF;
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+#feedback-page {
+	text-align: center;
+}
+
+.form {
+	background-color: rgba(0,0,0,0.4);
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 35px;
+	padding-bottom: 50px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color: #3c3c3c;
+	font-family: "Raleway", sans-serif;
+ 	font-weight: 500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus {
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+ 	padding: 13px 13px 13px 54px;
+}
+
+.focused {
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+#name {
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus {
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email {
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus {
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment {
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color: white;
+}
+
+#button-blue {
+	font-family: "Raleway", sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor: pointer;
+	background-color: #133453;
+	color: white;
+	font-size: 24px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  	margin-top:-4px;
+ 	font-weight:700;
+}
+
+#button-blue:hover {
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+
+.submit:hover {
+	color: #3498db;
+}
+
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease {
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div {
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
 /*---------------------------------
 MEDIA QUERIES
 ----------------------------------*/
 
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+
+	.navbar-toggle {
+		margin-right: 2.5em;
+		color: transparent;
+	}
+
+    .hero-text {
+        font-size: 1.5em;
+        margin-top: 13em;
+    }
+
+    .about-me {
+    	padding-bottom: 8em;
+    }
+
+    .intro-wrapper {
+    	/*padding-bottom: 6em;*/
+    }
+
+    .intro-title {
+    	font-size: 2.5em;
+    	padding-bottom: 1em;
+    }
+
+    .intro-text {
+    	margin-left: 3em;
+    }
+
+    .languages-wrapper {
+    	padding-bottom: 5em;
+    }
+
+    .skills-intro {
+    	margin-right: 0.5em;
+    	margin-left: 0.5em;
+    }
+
+	.col-lg-2 {
+		margin-bottom: 3em;
+	}
+}
+
+/* sm 
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+} */
+
+/* md */
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+   
+	.hero-text {
+		margin-top: 9em;
+	}
+
+	.col-md-3 {
+		margin-left: 2em;
+	}
+
+	.col-md-4 {
+		padding-bottom: 2.5em;
+	}
+
+	 .languages-wrapper {
+    	padding-bottom: 5em;
+    }
+
+} 
